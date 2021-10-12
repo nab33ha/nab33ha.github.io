@@ -1,0 +1,149 @@
+body {
+  display: relative;
+   background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+width: 80%;
+height: 70%;
+margin: auto;}
+
+.h1 {font-size:xx-large;
+  color:whitesmoke;
+}
+
+
+
+.header {
+  font-family: "Courier New", Courier, monospace;
+  background-color: lightgrey;
+  text-align: center;
+  vertical-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1vh;
+}
+.header:hover {
+  background-color: #20EDFF;
+ 
+}
+.answer1 {
+  display: none;
+}
+.header:hover h1.weather1{
+ display:none;
+
+}
+.header:hover h1.answer1{
+ display:block;
+  font-size: 2em;
+  color: white;
+}
+
+
+
+
+.header2 {
+    font-family: "Courier New", Courier, monospace;
+  background-color: darkgrey;
+  text-align: center;
+  vertical-align: center;
+   width: 50%;
+  margin: 0 auto;
+  padding: 1vh;
+}
+.header2:hover {
+ background-color: #FFFB20;
+  
+}
+.answer2 {
+  display: none;
+}
+.header2:hover h1.weather2{
+ display:none;
+}
+.header2:hover h1.answer2{
+ display:block;
+  color: white;
+}
+
+
+
+
+.header3  {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #737373;
+  text-align: center;
+  vertical-align: center;
+   width: 50%;
+  margin: 0 auto;
+  padding: 1vh;
+}
+.header3:hover {
+   background-color: #FF1F19;
+ 
+}
+.answer3 {
+  display: none;
+}
+.header3:hover h1.weather3{
+ display:none;
+}
+
+.header3:hover h1.answer3{
+ display:block;
+  color: white;
+}
+
+
+
+.header4  {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #5A5A5A;
+  text-align: center;
+  vertical-align: center;
+   width: 50%;
+  margin: 0 auto;
+  padding: 1vh;
+}
+.header4:hover {
+   background-color: #0024FF;
+ 
+}
+.answer4 {
+  display: none;
+}
+.header4:hover h1.weather4{
+ display:none;
+}
+
+.header4:hover h1.answer4{
+ display:block;
+  color: white;
+}
+
+.header5 {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #3E3E3E ;
+  text-align: center;
+  vertical-align: center;
+   width: 50%;
+  margin: 0 auto;
+  padding: 1vh;
+}
+.header5:hover {
+   background-color: #FF9000 ;
+ 
+}
+.answer5 {
+  display: none;
+}
+.header5:hover h1.weather5{
+ display:none;
+}
+
+.header5:hover h1.answer5{
+ display:block;
+  color: white;
+}
+
+
+
