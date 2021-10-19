@@ -3,8 +3,10 @@ body {
   background-color:  #FF7272;
   font-family:  monospace;
   padding: 50px;
+   cursor: url("flower.png"), url("flower.png"), default;
 }
 
+  
 
 @media (max-width: 800px) {
   body {
