@@ -1,0 +1,393 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1500px;
+  height: 900px;
+  background: white;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Your CSS goes here */
+
+.table{
+  transform: skew(60deg);
+  background-color:#F3D6C1   ;
+  height: 400px;
+  width: 1100px;
+  position: absolute;
+  bottom: 0;
+left: 70px;
+}
+.table2{
+  background-color:#F3D6C1 ;
+  height: 250px;
+  width: 1000px;
+  position: absolute;
+  bottom: 0;
+left: 0px}
+
+.pumpkin{width:23.4em;
+  height: 23.4em;
+  margin-top: 1.2em;
+  background-image: linear-gradient(to right, #F59D4B, #D25205 );
+  border-radius: 60% 15% 60% 90%;
+  transform: rotate(-45deg);
+  box-shadow: inset .15em .25em #B25010;
+  position: absolute;
+  right: 500px;
+  bottom: 50px;
+}
+
+.squash{width: 27.1em;
+  height: 20.1em;
+  margin: 0.8em;
+ background-image: linear-gradient(150deg, #E2AB55,#E2C655, #E2AB55,#E2C655, #E2AB55,#E2C655, #E2AB55,#E2C655, #E2AB55,#E2C655, #E2AB55,#E2C655, #E2AB55,#E2C655, #E2AB55);
+  border-radius: 70% 15%;
+  box-shadow: inset 0.2em 0.2em  #844026;
+  transform: rotate(200deg);
+  position: absolute;
+bottom: 20px;
+left: 250px;
+}
+
+.melon{position: absolute;
+  width:20em;
+  height: 15.5em;
+  top: 25em;
+  left:15em;
+  border-radius: 50%;
+  background-color: #EBE0AE;
+  box-shadow: inset 0.2em -.2em  #9C8B61;
+  border-radius: 90% 25%;
+transform: rotate(30deg);}
+
+.teapot{ position: absolute;
+  width:20em;
+  height: 20.5em;
+  border-radius: 95%;
+  background-image: linear-gradient(to right, #3A2A1E, #634129, #432C1C,#5B3921,#432C1C,#5B3921,#432C1C,#5B3921);
+  box-shadow: inset 0.5em -.2em  #0A0601;
+  position: absolute;
+  top:19em;
+  left: -6em;}
+
+.lid{
+  position: absolute;
+  width: 20.6em;
+  height: 3em;
+  background-color: #342510;
+ left: -10em;
+  top:19em;
+  margin: auto;
+  z-index: 15;
+  border-radius: 20px 20px 3px 3px;}
+
+.handle{
+position: absolute;
+  width: 1.8em;
+  height: 2.3em;
+  left: 10.4em;
+  bottom: 34em;
+  background-color: #342510;
+  margin: auto;
+  border-radius: 20px 20px 3px 3px;
+transform: rotate(45deg);}
+
+.teatop{position: absolute;
+  width: 2.8em;
+  height: 3em;
+  left: 2.5em;
+  bottom: 36.1em;
+  background-color: #342510;
+  margin: auto;
+  border-radius: 20px 20px 3px 3px;}
+
+.ribbon1{ position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 200px;
+    position: absolute;
+     left: 5.5em;
+     bottom: 9.5em;
+     border-radius: 30%;
+      background-image: linear-gradient(to right, #D41212,#FF2121,#D41212,#FF2121,#D41212,#FF2121); 
+       transform: skew(10deg, 5deg);}
+
+       .ribbon2{  position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 200px;
+     right: 40.5em;
+     bottom: 5.5em;
+      background-image: linear-gradient(to right, #D41212,#FF2121,#D41212,#FF2121,#D41212,#FF2121); 
+       transform: skew(10deg, 15deg);}
+
+       .ribbon3{ position: absolute;
+       padding: 12px;
+       margin-bottom: 6px;
+       height: 100px;
+       width: 200px;
+       border-radius: 50%;
+       box-shadow: 50px -50px 0 0 #FF2121;
+             right: 37.5em;
+     bottom: 0.5em;
+     transform: rotate(70deg); }
+
+     .ribbon4{position: absolute;
+       padding: 12px;
+       margin-bottom: 6px;
+       height:210px;
+       width: 90px;
+       border-radius: 80%;
+       box-shadow: 50px -50px 0 0 #D41212;
+       right: 42.5em;
+     bottom: -4em;
+     transform: rotate(1200deg); }
+
+.ribbon5{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 200px;
+     right: 50.5em;
+     border-radius: 30%;
+     bottom: -1.20em;
+      background-image: linear-gradient(to right, #D41212,#FF2121,#D41212,#FF2121,#D41212,#FF2121); 
+       transform: skew(20deg, 1deg);}
+
+    .ribbon6{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 20px;
+      width: 300px;
+     left: 5em;     border-radius: 30%;
+     bottom: 15.5em;
+      background-image: linear-gradient(to right, #850505,#D91212,#D41212,#D91212,#850505);
+      transform: rotate(-19deg);}
+
+      .ribbon7{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 200px;
+     right: 50.5em;
+     border-radius: 30%;
+     bottom: 18em;
+      background-image: linear-gradient(to right, #D41212,#FF2121,#D41212,#FF2121,#D41212,#FF2121); 
+       transform: skew(20deg, 1deg);}
+
+ .ribbon8{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 400px;
+     left: 10.5em;
+     border-radius: 30%;
+     bottom: -2em;
+      background-image: linear-gradient(to right, #D41212,#FF2121,#D41212,#FF2121,#D41212,#FF2121); 
+       transform: skew(120deg);}
+
+       .pumpkinstem{width:3em;
+   height:2.5em;
+  background-image: url(assets/stem.jpg);
+   box-shadow: inset 0.2em -0.2em  #354B27 ;
+   border-radius: 20px 20px 32px 21px;
+   position:absolute;
+ right: 650px;
+  top: 405px;
+transform: rotate(-55deg);}
+
+.vase-base{border-style: solid;
+      border-color: transparent transparent #C1BEB9 transparent;
+      border-width: 0 90px 100px 90px;
+      height: 100px;
+      width: 50px;
+      box-sizing: content-box;
+      box-shadow: black;
+
+      position: absolute;
+      margin: 20px 10 50px 0;
+      left: 400px;
+      bottom: 19em;
+      opacity: 80%;}
+
+      .vase-base2{border-style: solid;
+      border-color: transparent transparent #C1BEB9 transparent;
+      border-width: 0 90px 40px 90px;
+      height: 100px;
+      width: 50px;
+      box-sizing: content-box;
+      box-shadow: black;
+
+      position: absolute;
+      margin: 20px 10 50px 0;
+      left: 400px;
+      bottom: 19em;
+      opacity: 80%;
+      transform: rotate(180deg);}
+
+      .vase{height: 420px;
+      width: 230px;
+    
+      border-radius: 10px 10px 0px 0px;
+      position: absolute;
+      left: 400px;
+      top: 39px;
+     background-image: linear-gradient(to right,#989693,#0B583B,#9DABA6,#23684E, #60746C ,#9FA9A5,#959A98);
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+      .leaf1{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 100px;
+     right: 60.5em;
+     border-radius: 30%;
+     top: -1.20em;
+      background-image: linear-gradient(to right, #137751 ,#154432, #3C734A ,#1C6C31 ); 
+       transform: skew(-200deg, 10deg);}
+
+ .leaf2{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 100px;
+     right: 55.5em;
+     border-radius: 30%;
+     top: -1.20em;
+      background-image: linear-gradient(to right, #137751 ,#154432, #3C734A ,#1C6C31 ); 
+       transform: skew(-10deg, 170deg);}
+
+       .leaf3{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 100px;
+     right: 49.5em;
+     border-radius: 50% 0 30% 0;
+     top: -1.20em;
+      background-image: linear-gradient(to right, #137751 ,#154432, #3C734A ,#1C6C31 ); 
+       transform: skew(-30deg, 170deg);}
+
+         .leaf4{position: absolute;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 6px;
+      height: 60px;
+      width: 100px;
+     right: 65.5em;
+     border-radius: 50% 0 30% 0;
+     top: -1.20em;
+      background-image: linear-gradient(to right, #137751 ,#154432, #3C734A ,#1C6C31 ); 
+      transform: rotate(45deg);
+   }
+   .chair{ position: relative;
+      width: 200px;
+      height: 150px;
+      margin: 20px 0;
+      background: red;
+      border-radius: 50% / 10%;
+     background-image: linear-gradient(to right,#FAB9A6  ,#DCC8BD,#9E8C83 );
+      text-align: center;
+      text-indent: .1em;
+      top: 400px;
+      left: 550px;}
+
+  .candle2{
+    height: 70px;
+      width: 20px;
+    
+      position: absolute;
+      right: 752px;
+      top: 200px;
+     background-image: linear-gradient(to right,#A28722 ,#CDB353 ,#937813,#725E16 ,#CDB353 ,#937813,#725E16 ,#CDB353 ,#937813);
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+      .candle2stick{height: 270px;
+      width: 5px;
+    
+      position: absolute;
+      right: 760px;
+      top: 220px;
+     background-image: linear-gradient(to right,#A28722 ,#5F4F13 ,#937813,#5F4F13 ,#CDB353 ,#937813,#725E16 ,#CDB353 ,#937813);
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+       .candle2wax{
+    height: 200px;
+      width: 20px;
+     position: absolute;
+      right: 752px;
+      top: 1px;
+     background-image: linear-gradient(to left,#E3E2DD ,#A9A7A0 ,#8C8981 );
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+    .candle1{
+    height: 70px;
+      width: 20px;
+    
+      position: absolute;
+      left: 272px;
+      top: 400px;
+     background-image: linear-gradient(to right,#A28722 ,#CDB353 ,#937813,#725E16 ,#CDB353 ,#937813,#725E16 ,#CDB353 ,#937813);
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+       .candle1stick{height: 270px;
+      width: 5px;
+    
+      position: absolute;
+      left: 278px;
+      top: 400px;
+     background-image: linear-gradient(to right,#A28722 ,#5F4F13 ,#937813,#5F4F13 ,#CDB353 ,#937813,#725E16 ,#CDB353 ,#937813);
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+       .candle1wax{
+    height: 200px;
+      width: 20px;
+     position: absolute;
+      left: 272px;
+      top: 200px;
+     background-image: linear-gradient(to left,#E3E2DD ,#A9A7A0 ,#8C8981 );
+      opacity: 75%;
+      transform: rotate(180deg)}
+
+      .wick{height: 10px;
+      width: 2px;
+    
+      position: absolute;
+      left: 278px;
+      top: 193px;
+     background-color: black;
+      opacity: 75%;
+      transform: rotate(170deg)}
+
+
+
+ 
