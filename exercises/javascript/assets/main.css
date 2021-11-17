@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #E86C5B;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container .face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #C1A3F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.container .face:hover {
+  background: linear-gradient(180deg, #3D700A , #93C362 , #ABB4A1 );
+}
+
+.container .face:before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  width: 150px;
+  height: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: #795F8E ;
+  transition: 0.5s;
+}
+
+.container .face:hover:before {
+  top: 210px;
+  width: 150px;
+  height: 20px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: #38620E;
+}
+
+.container .face .eyes {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .face .eyes .eye {
+  position: relative;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 15px;
+  background: #D9F5BD  ;
+  border-radius: 50%;
+}
+
+.container .face .eyes .eye:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #68AD23 ;
+  border-radius: 50%;
+}
+
+.container h2 {
+  position: absolute;
+  top: 75px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.container h2:last_child {
+  position: absolute;
+  top: initial;
+  bottom: 75px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.container .face2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #C1A3F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.container .face2:hover {
+  background: linear-gradient(180deg, #f44336, #f44336, #ffcd00);
+}
+
+.container .face2:before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  width: 150px;
+  height: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: #795F8E ;
+  transition: 0.5s;
+}
+
+.container .face2:hover:before {
+  top: 210px;
+  width: 150px;
+  height:80px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background: #9d0b00;
+}
+
+
+.container .face2 .eyes {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .face2 .eyes .eye {
+  position: relative;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 15px;
+  background: #D9F5BD  ;
+  border-radius: 50%;
+}
+
+.container .face2 .eyes .eye:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #68AD23 ;
+  border-radius: 50%;
+}
+
+
+
+
+
+.container .face3 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #C1A3F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.container .face3:hover {
+  background: linear-gradient(180deg, #F7B400, #F5EE00 , #FFFFF1);
+}
+
+.container .face3:before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  width: 150px;
+  height: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: #795F8E ;
+  transition: 0.5s;
+}
+
+.container .face3:hover:before {
+  top: 210px;
+  width: 180px;
+  height: 80px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: #FB5386;
+}
+
+.container .face3 .eyes {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .face3 .eyes .eye {
+  position: relative;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 15px;
+  background: #D9F5BD  ;
+  border-radius: 50%;
+}
+
+.container .face3 .eyes .eye:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #68AD23 ;
+  border-radius: 50%;
+}
