@@ -186,6 +186,7 @@ background-image: url(black.jpeg);
 }
 
 .projects{
+  font-family: 'Berkshire Swash', cursive;
  text-align: left;
 color: wheat;
   position: absolute;
@@ -277,6 +278,7 @@ background-image: url(black2.jpeg);
 }
 
 .projects2{
+  font-family: 'Berkshire Swash', cursive;
   text-align: 20px;
 color: wheat;
   position: absolute;
@@ -366,6 +368,7 @@ background-image: url(black3.png);
 }
 
 .projects3{
+  font-family: 'Berkshire Swash', cursive;
   text-align: left;
 color: wheat;
   position: absolute;
@@ -454,6 +457,7 @@ background-image: url(black4.jpeg);
 }
 
 .projects4{
+  font-family: 'Berkshire Swash', cursive;
   text-align: left;
 color: wheat;
   position: absolute;
@@ -542,6 +546,7 @@ background-image: url(black5.png);
 }
 
 .projects5{
+  font-family: 'Berkshire Swash', cursive;
   text-align: center;
 color: wheat;
   position: absolute;
@@ -630,6 +635,7 @@ background-image: url(black6.png);
 }
 
 .projects6{
+  font-family: 'Berkshire Swash', cursive;
   text-align: center;
 color: wheat;
   position: absolute;
@@ -718,6 +724,7 @@ background-image: url(black7.png);
 }
 
 .projects7{
+  font-family: 'Berkshire Swash', cursive;
   text-align: left;
 color: wheat;
   position: absolute;
@@ -808,6 +815,7 @@ background-image: url(black8.png);
 }
 
 .projects8{
+  font-family: 'Berkshire Swash', cursive;
   text-align: center;
 color: wheat;
   position: absolute;
@@ -896,6 +904,7 @@ background-image: url(black2.jpeg);
 }
 
 .projects9{
+  font-family: 'Berkshire Swash', cursive;
   text-align: center;
 color: wheat;
   position: absolute;
@@ -984,6 +993,7 @@ background-image: url(black2.jpeg);
 }
 
 .projects10{
+  font-family: 'Berkshire Swash', cursive;
   text-align: center;
 color: wheat;
   position: absolute;
