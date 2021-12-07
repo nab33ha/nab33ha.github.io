@@ -1,0 +1,987 @@
+html,body{
+  height: 100%;
+}
+
+body {
+  display: block;
+  display:flex;
+  height: 300%;
+  text-align:center;
+ background-image: radial-gradient(#60088C, #180123,  #400B5B );
+
+  border-color: wheat;
+  border-style: solid;
+
+}
+
+.cards {
+  position: absolute;
+
+  max-height: 300px;
+   padding-top: 20px;
+  object-fit: cover;
+z-index: -1;
+  position: relative;
+margin-left: 20%;
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+  perspective: 2000px;
+  perspective: 100vmax;
+  perspective-origin: center center;
+  text-align: center;
+  transform-style: preserve-3d;
+
+
+}
+img{
+   width: 110px;
+  height: 155px;
+  object-fit: cover;
+}
+.card{
+
+  display: inline-block;
+  flex: 0 0 auto;
+  background-position:-6px -8px;
+  border-radius: 6px;
+  border: 1px solid silver;
+  width:110px;height:155px;
+  margin: 0 2px 0 0;
+  position:relative;
+  animation: rotate 4s ease infinite;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  text-align: center;
+  font-size: 100px;
+  justify-content: center;
+  color: wheat;
+  
+}
+
+.card::before {
+  content:'';
+  
+  background-position: -485px -343px;
+  border-radius: 6px;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  transform: translate3d(0px,0px,-1px) rotateY(180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.card:nth-child(2) {
+  background-position-x: -126px;
+  animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+  background-position-x: -245px;
+  animation-delay: 0.8s;
+}
+
+.card:nth-child(4) {
+  background-position-x: -365px;
+  animation-delay: 1.2s;
+}
+
+.card:nth-child(5) {
+  background-position-x: -485px;
+  animation-delay: 1.6s;
+}
+
+.card:nth-child(6) {
+  background-position-y: -176px;
+  animation-delay: 2s;
+}
+
+.card:nth-child(7) {
+  background-position-x: -123px;
+  background-position-y: -175px;
+  animation-delay: 2.4s;
+}
+
+.card:nth-child(8) {
+  background-position-x: -245px;
+  background-position-y: -176px;
+  animation-delay: 2.8s;
+}
+
+@keyframes rotate {
+  50%, to {
+    transform: rotateY(360deg);
+  }
+}
+
+.backs{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 30%;
+left: 5%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black.jpeg);
+  color: wheat;
+}
+
+.projects{
+ text-align: left;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 30%;
+left: 5%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project1{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black.jpeg);
+  color: wheat;
+
+}
+.back:hover {
+transform: rotate3d(0, 0, 1, 45deg);
+}
+
+
+.backs2{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 30%;
+left: 35%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back2{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black2.jpeg);
+  color: wheat;
+}
+
+.projects2{
+  text-align: 20px;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 30%;
+left: 35%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project2{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black2.jpeg);
+  color: wheat;
+
+}
+.back2:hover {
+transform: rotate3d(0, 0, 1, -45deg);
+}
+
+
+.backs3{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 30%;
+left: 65%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back3{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black3.png);
+  color: wheat;
+}
+
+.projects3{
+  text-align: left;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 30%;
+left: 65%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project3{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black3.png);
+  color: wheat;
+
+}
+.back3:hover {
+transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.backs4{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 100%;
+left: 5%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back4{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black4.jpeg);
+  color: wheat;
+}
+
+.projects4{
+  text-align: left;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 100%;
+left: 5%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project4{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black4.jpeg);
+  color: wheat;
+
+}
+.back4:hover {
+transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.backs5{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 100%;
+left: 35%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back5{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black5.png);
+  color: wheat;
+}
+
+.projects5{
+  text-align: center;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 100%;
+left: 35%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project5{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black5.png);
+  color: wheat;
+
+}
+.back5:hover {
+transform: rotate3d(0, 0, 1, -85deg);
+}
+
+.backs6{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 100%;
+left: 65%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back6{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black6.png);
+  color: wheat;
+}
+
+.projects6{
+  text-align: center;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 100%;
+left: 65%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project6{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black6.png);
+  color: wheat;
+
+}
+.back6:hover {
+transform: rotate3d(0, 0, 1, -65deg);
+}
+
+.backs7{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 170%;
+left: 5%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back7{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black7.png);
+  color: wheat;
+}
+
+.projects7{
+  text-align: left;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 170%;
+left: 5%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project7{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black7.png);
+  color: wheat;
+
+}
+.back7:hover {
+transform: rotate3d(0, 0, 1, 45deg);
+}
+
+
+
+.backs8{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 170%;
+left: 65%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back8{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black8.png);
+  color: wheat;
+}
+
+.projects8{
+  text-align: center;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 170%;
+left: 65%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project8{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black8.png);
+  color: wheat;
+
+}
+.back8:hover {
+transform: rotate3d(0, 0, 1, -55deg);
+}
+
+
+.backs9{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 170%;
+left: 35%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back9{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black2.jpeg);
+  color: wheat;
+}
+
+.projects9{
+  text-align: center;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 170%;
+left: 35%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project9{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black2.jpeg);
+  color: wheat;
+
+}
+.back9:hover {
+transform: rotate3d(0, 0, 1, -55deg);
+}
+
+.backs10{ position: absolute;
+ 
+  object-fit: cover;
+ width: 300px;
+  height: 500px;
+
+  z-index: 100;
+top: 240%;
+left: 35%;
+
+  max-height: 300px;
+
+  object-fit: cover;
+z-index: 2;
+ flex-flow: row;
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+
+
+}
+
+.back10{
+    display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black2.jpeg);
+  color: wheat;
+}
+
+.projects10{
+  text-align: center;
+color: wheat;
+  position: absolute;
+ 
+  object-fit: contain;
+  background-repeat: no-repeat;
+ width: 300px;
+  height: 400px;
+
+  z-index: 1;
+top: 240%;
+left: 35%;
+
+
+
+
+  object-fit: cover;
+
+
+  display: block;
+  
+  flex: 0 1 auto;
+  flex-direction: row;
+  gap: 1vw;
+  transition: width 2s, height 4s;
+
+}
+.project10{display: inline-block;
+  flex: 0 0 auto;
+    object-fit: cover;
+    width: 300px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-6px -8px;
+  margin: 0 2px 0 0;
+  position:relative;
+background-image: url(black2.jpeg);
+  color: wheat;
+
+}
+.back10:hover {
+transform: rotate3d(0, 0, 1, -55deg);
+}
