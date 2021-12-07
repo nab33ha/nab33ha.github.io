@@ -154,6 +154,7 @@ z-index: 2;
   flex: 0 0 auto;
     object-fit: cover;
     width: 300px;
+      box-shadow: 0 0 100px yellow; 
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -208,6 +209,7 @@ background-image: url(black.jpeg);
 }
 .back:hover {
 transform: rotate3d(0, 0, 1, 45deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 
@@ -242,6 +244,7 @@ z-index: 2;
     object-fit: cover;
     width: 300px;
   height: 500px;
+    box-shadow: 0 0 100px yellow; 
   background-size: contain;
   background-repeat: no-repeat;
   background-position:-6px -8px;
@@ -295,6 +298,7 @@ background-image: url(black2.jpeg);
 }
 .back2:hover {
 transform: rotate3d(0, 0, 1, -45deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 
@@ -328,6 +332,7 @@ z-index: 2;
   flex: 0 0 auto;
     object-fit: cover;
     width: 300px;
+      box-shadow: 0 0 100px yellow; 
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -382,6 +387,7 @@ background-image: url(black3.png);
 }
 .back3:hover {
 transform: rotate3d(0, 0, 1, 45deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 .backs4{ position: absolute;
@@ -421,6 +427,7 @@ z-index: 2;
   margin: 0 2px 0 0;
   position:relative;
 background-image: url(black4.jpeg);
+   box-shadow: 0 0 100px yellow; 
   color: wheat;
 }
 
@@ -468,6 +475,7 @@ background-image: url(black4.jpeg);
 }
 .back4:hover {
 transform: rotate3d(0, 0, 1, 45deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 .backs5{ position: absolute;
@@ -496,6 +504,7 @@ z-index: 2;
 }
 
 .back5{
+    box-shadow: 0 0 100px yellow; 
     display: inline-block;
   flex: 0 0 auto;
     object-fit: cover;
@@ -554,6 +563,7 @@ background-image: url(black5.png);
 }
 .back5:hover {
 transform: rotate3d(0, 0, 1, -85deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 .backs6{ position: absolute;
@@ -582,6 +592,7 @@ z-index: 2;
 }
 
 .back6{
+    box-shadow: 0 0 100px yellow; 
     display: inline-block;
   flex: 0 0 auto;
     object-fit: cover;
@@ -640,6 +651,7 @@ background-image: url(black6.png);
 }
 .back6:hover {
 transform: rotate3d(0, 0, 1, -65deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 .backs7{ position: absolute;
@@ -668,6 +680,7 @@ z-index: 2;
 }
 
 .back7{
+    box-shadow: 0 0 100px yellow; 
     display: inline-block;
   flex: 0 0 auto;
     object-fit: cover;
@@ -726,6 +739,7 @@ background-image: url(black7.png);
 }
 .back7:hover {
 transform: rotate3d(0, 0, 1, 45deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 
@@ -756,6 +770,7 @@ z-index: 2;
 }
 
 .back8{
+    box-shadow: 0 0 100px yellow; 
     display: inline-block;
   flex: 0 0 auto;
     object-fit: cover;
@@ -843,6 +858,7 @@ z-index: 2;
 }
 
 .back9{
+    box-shadow: 0 0 100px yellow; 
     display: inline-block;
   flex: 0 0 auto;
     object-fit: cover;
@@ -901,6 +917,7 @@ background-image: url(black2.jpeg);
 }
 .back9:hover {
 transform: rotate3d(0, 0, 1, -55deg);
+   box-shadow: 0 0 100px yellow; 
 }
 
 .backs10{ position: absolute;
@@ -929,6 +946,7 @@ z-index: 2;
 }
 
 .back10{
+    box-shadow: 0 0 100px yellow; 
     display: inline-block;
   flex: 0 0 auto;
     object-fit: cover;
@@ -986,5 +1004,6 @@ background-image: url(black2.jpeg);
 
 }
 .back10:hover {
+   box-shadow: 0 0 100px yellow; 
 transform: rotate3d(0, 0, 1, -55deg);
 }
