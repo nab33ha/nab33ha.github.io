@@ -1,8 +1,11 @@
 html,body{
+  cursor: url('glow.png'), auto; 
+
   height: 100%;
 }
 
 body {
+cursor: url('glow.png'), auto; 
   display: block;
   display:flex;
   height: 300%;
