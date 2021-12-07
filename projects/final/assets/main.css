@@ -28,7 +28,11 @@ h3{
   top: 190px;
   color: wheat;
 }
+a{
+    font-family: 'Berkshire Swash', cursive;
+}
 a:hover{
+
     cursor: url('eye.png'), pointer; 
 
 }
@@ -148,7 +152,7 @@ img{
 
   z-index: 100;
 top: 30%;
-left: 5%;
+left: 15%;
 
   max-height: 300px;
 
@@ -193,7 +197,7 @@ color: wheat;
 
   z-index: 1;
 top: 30%;
-left: 5%;
+left: 15%;
 
 
 
@@ -239,7 +243,7 @@ transform: rotate3d(0, 0, 1, 45deg);
 
   z-index: 100;
 top: 30%;
-left: 35%;
+left: 40%;
 
   max-height: 300px;
 
@@ -284,7 +288,7 @@ color: wheat;
 
   z-index: 1;
 top: 30%;
-left: 35%;
+left: 40%;
 
 
 
@@ -416,7 +420,7 @@ transform: rotate3d(0, 0, 1, 45deg);
 
   z-index: 100;
 top: 100%;
-left: 5%;
+left: 15%;
 
   max-height: 300px;
 
@@ -461,7 +465,7 @@ color: wheat;
 
   z-index: 1;
 top: 100%;
-left: 5%;
+left: 15%;
 
 
 
@@ -504,7 +508,7 @@ transform: rotate3d(0, 0, 1, 45deg);
 
   z-index: 100;
 top: 100%;
-left: 35%;
+left: 40%;
 
   max-height: 300px;
 
@@ -549,7 +553,7 @@ color: wheat;
 
   z-index: 1;
 top: 100%;
-left: 35%;
+left: 40%;
 
 
 
@@ -680,7 +684,7 @@ transform: rotate3d(0, 0, 1, -65deg);
 
   z-index: 100;
 top: 170%;
-left: 5%;
+left: 15%;
 
   max-height: 300px;
 
@@ -725,7 +729,7 @@ color: wheat;
 
   z-index: 1;
 top: 170%;
-left: 5%;
+left: 15%;
 
 
 
@@ -858,7 +862,7 @@ transform: rotate3d(0, 0, 1, -55deg);
 
   z-index: 100;
 top: 170%;
-left: 35%;
+left: 40%;
 
   max-height: 300px;
 
@@ -903,7 +907,7 @@ color: wheat;
 
   z-index: 1;
 top: 170%;
-left: 35%;
+left: 40%;
 
 
 
@@ -946,7 +950,7 @@ transform: rotate3d(0, 0, 1, -55deg);
 
   z-index: 100;
 top: 240%;
-left: 35%;
+left: 40%;
 
   max-height: 300px;
 
@@ -991,7 +995,7 @@ color: wheat;
 
   z-index: 1;
 top: 240%;
-left: 35%;
+left: 40%;
 
 
 
