@@ -16,7 +16,10 @@ cursor: url('glow.png'), auto;
   border-style: solid;
 
 }
-h2{
+
+
+h3{
+  font-family: 'Berkshire Swash', cursive;
   position: absolute;
   width: 100%;
   height: 10%;
@@ -24,6 +27,10 @@ h2{
   left:0 ;
   top: 190px;
   color: wheat;
+}
+a:hover{
+    cursor: url('eye.png'), pointer; 
+
 }
 
 .cards {
@@ -217,8 +224,10 @@ background-image: url(black.jpeg);
 
 }
 .back:hover {
+
 transform: rotate3d(0, 0, 1, 45deg);
    box-shadow: 0 0 100px yellow; 
+   cursor: url('eye.png')
 }
 
 
@@ -1015,4 +1024,5 @@ background-image: url(black2.jpeg);
 .back10:hover {
    box-shadow: 0 0 100px yellow; 
 transform: rotate3d(0, 0, 1, -55deg);
+cursor: url('eye.png'), pointer; 
 }
