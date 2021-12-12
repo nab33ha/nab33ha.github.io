@@ -1,13 +1,18 @@
 body {
 	margin: 0;
 	padding: 0;
-	background:  #E0D6F0 url(images/img01.jpg) repeat-x left top;
-	font-family: Arial, Helvetica, sans-serif;
+	background: #E0D6F0 url(images/img01.jpg) repeat-x left top;
+	font-family: 'Abril Fatface', cursive;
 	font-size: 14px;
 	color: #7F7F81;
 }
+body:hover{
+  cursor: url("cursor.png"), auto;
+}
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
@@ -16,7 +21,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 2em;
-	 color: #341D4B
+	color: #341D4B
 }
 
 h2 {
@@ -27,13 +32,14 @@ h3 {
 	font-size: 1.6em;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	margin-top: 0;
 	line-height: 180%;
 }
 
-ul, ol {
-}
+
 
 a {
 	text-decoration: none;
@@ -62,21 +68,22 @@ img.aligncenter {
 }
 
 #wrapper {
+	height: 2vw;
 	background: url(images/img02.jpg) no-repeat center top;
 }
+
 
 /* Header */
 
 #header {
-	width: 950px;
-	height: 125px;
+	width: 95%;
+	height: 1%;
 	margin: 0 auto;
 }
 
 #logo {
 	float: left;
-	width: 600px;
-	height: 63px;
+	width: 90%;
 }
 
 #logo h1 {
@@ -89,52 +96,18 @@ img.aligncenter {
 	letter-spacing: -1px;
 	text-transform: lowercase;
 	text-shadow: -1px 1px 2px #8C5414;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size:60px;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 60px;
 	color: #FFFFFF;
 }
 
 #logo a {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #A7A8E9;
 }
-
-#search {
-	float: right;
-	width: 291px;
-	height: 63px;
-}
-
-#search form {
-	padding: 70px 0px 0px 0px;
-	background: url(images/img04.jpg) no-repeat left 70px;
-}
-
-#search fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
-#search-text {
-	width: 200px;
-	padding: 8px 10px 8px 10px;
-	border: none;
-	background: none;
-	text-transform: lowercase;
-	font: normal 11px Arial, Helvetica, sans-serif;
-	color: #7F7F81;
-}
-
-#search-submit {
-	display: none;
-}
-
-/* Menu */
 
 #menu {
-	width: 950px;
-	height: 63px;
+	width: 85%;
 	margin: 0 auto;
 	padding: 0px 0px 0px 0px;
 	background: url(images/img03.jpg) repeat-x left top;
@@ -149,7 +122,7 @@ img.aligncenter {
 
 #menu li {
 	float: left;
-	height: 63px;
+	height: 1%;
 	background: url(images/img05.jpg) no-repeat right top;
 }
 
@@ -169,8 +142,7 @@ img.aligncenter {
 	border: none;
 }
 
-#menu li.current_page_item {
-}
+#menu li.current_page_item {}
 
 #menu .current_page_item a {
 	background: url(images/img06.jpg) repeat-x left top;
@@ -182,26 +154,28 @@ img.aligncenter {
 }
 
 #splash {
-	width: 920px;
-	height: 472px;
+	width: 95%;
+	top: 50vw;
 	margin: 0px auto 30px auto;
 	padding: 30px 0px 0px 30px;
 	background: #FFFFFF;
 }
 
+
 /* Page */
 
 #page {
-	width: 950px;
+	width: 95%;
 	margin: 0 auto;
 	padding: 0;
 }
+
 
 /* Content */
 
 #content {
 	float: left;
-	width: 620px;
+	width: 90%;
 	margin-bottom: 30px;
 	padding: 0px 0px 0px 0px;
 }
@@ -226,14 +200,13 @@ img.aligncenter {
 .post .meta {
 	padding: 5px 0px 15px 0px;
 	text-align: left;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Abril Fatface', cursive;
 	font-size: 11px;
 	font-style: italic;
 	color: #888888;
 }
 
-.post .meta a {
-}
+.post .meta a {}
 
 .post .entry {
 	padding-bottom: 20px;
@@ -245,11 +218,9 @@ img.aligncenter {
 	font-weight: bold;
 }
 
-/* Sidebar */
-
 #sidebar {
-	float: right;
-	width: 300px;
+	float: left;
+	width: 90%;
 	padding: 0px;
 }
 
@@ -260,7 +231,8 @@ img.aligncenter {
 }
 
 #sidebar li {
-	background: #FFFFFF;
+	background: #8642CD;
+	color: white;
 	margin-bottom: 30px;
 	padding: 30px 0px;
 }
@@ -311,10 +283,10 @@ img.aligncenter {
 	color: #5D9800;
 }
 
+
 /* Calendar */
 
-#calendar {
-}
+#calendar {}
 
 #calendar_wrap {
 	padding: 20px;
@@ -331,6 +303,7 @@ img.aligncenter {
 #calendar #next {
 	text-align: right;
 }
+
 
 /* Footer */
 
@@ -361,7 +334,6 @@ img.aligncenter {
 	color: #FFFFFF;
 }
 
-
 #three-columns {
 	overflow: hidden;
 	width: 950px;
@@ -381,7 +353,7 @@ img.aligncenter {
 }
 
 #three-columns h2 {
- 	padding: 0px 0px 20px 20px;
+	padding: 0px 0px 20px 20px;
 	font-size: 28px;
 	color: #000000;
 }
@@ -402,6 +374,8 @@ img.aligncenter {
 	width: 280px;
 }
 
-#column1 a, #column2 a, #column3 a {
+#column1 a,
+#column2 a,
+#column3 a {
 	color: #141414;
 }
