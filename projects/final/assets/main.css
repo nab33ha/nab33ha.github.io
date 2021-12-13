@@ -1,80 +1,85 @@
-html,body{
-  cursor: url('glow.png'), auto; 
-
+html,
+body {
+  cursor: url('glow.png'), auto;
   height: 100%;
 }
 
 body {
-cursor: url('glow.png'), auto; 
+  cursor: url('glow.png'), auto;
   display: block;
-  display:flex;
-  height: 300%;
-  text-align:center;
- background-image: radial-gradient(#60088C, #180123,  #400B5B );
-
+  display: flex;
+  height: 390%;
+  text-align: center;
+  background-image: radial-gradient(#60088C, #180123, #400B5B);
   border-color: wheat;
   border-style: solid;
-
 }
 
-
-h3{
+h3 {
+  flex-direction: column-reverse;
   font-family: 'Berkshire Swash', cursive;
   position: absolute;
   width: 100%;
   height: 10%;
   z-index: 3;
-  left:0 ;
-  top: 190px;
+  left: 0;
+  top: 220px;
   color: wheat;
+  font-size: 2.5em;
 }
-a{
-    font-family: 'Berkshire Swash', cursive;
+h5{
+   flex-direction: column-reverse;
+font-size: 1.4em;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  z-index: 3;
+  left: 0;
+  top: 350px;
+  color: wheat ;
+max-width: 90%;
+padding-left: 2%;
 }
-a:hover{
+a {
+  font-family: 'Berkshire Swash', cursive;
+}
 
-    cursor: url('eye.png'), pointer; 
-
+a:hover {
+  cursor: url('eye.png'), pointer;
 }
 
 .cards {
   position: absolute;
-
   max-height: 300px;
-   padding-top: 20px;
+  padding-top: 20px;
   object-fit: cover;
-z-index: -1;
+  z-index: -1;
   position: relative;
-margin-left: 20%;
+  width: 100%;
   display: block;
-  
-  flex: 0 1 auto;
-  flex-direction: row;
   gap: 1vw;
-
   perspective: 2000px;
   perspective: 100vmax;
   perspective-origin: center center;
   text-align: center;
   transform-style: preserve-3d;
-
-
 }
-img{
-   width: 110px;
-  height: 155px;
+
+img {
+  width: 110px;
   object-fit: cover;
 }
-.card{
 
+.card {
   display: inline-block;
   flex: 0 0 auto;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   border-radius: 6px;
   border: 1px solid silver;
-  width:110px;height:155px;
+  width: 110px;
+  height: 155px;
   margin: 0 2px 0 0;
-  position:relative;
+  position: relative;
   animation: rotate 4s ease infinite;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -82,21 +87,19 @@ img{
   font-size: 100px;
   justify-content: center;
   color: wheat;
-  
 }
 
 .card::before {
-  content:'';
-  
+  content: '';
   background-position: -485px -343px;
   border-radius: 6px;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:0;
-  transform: translate3d(0px,0px,-1px) rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translate3d(0px, 0px, -1px) rotateY(180deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
@@ -139,904 +142,805 @@ img{
 }
 
 @keyframes rotate {
-  50%, to {
+  50%,
+  to {
     transform: rotateY(360deg);
   }
 }
 
-.backs{ position: absolute;
- 
+.backs {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 30%;
-left: 15%;
-
+  top: 60%;
+  left: 15%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back{
-    display: inline-block;
+.back {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
-      box-shadow: 0 0 100px yellow; 
+  object-fit: cover;
+  width: 300px;
+  box-shadow: 0 0 100px yellow;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black.jpeg);
+  position: relative;
+  background-image: url(black.png);
   color: wheat;
 }
 
-.projects{
+.projects {
   font-family: 'Berkshire Swash', cursive;
- text-align: left;
-color: wheat;
+  text-align: left;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 30%;
-left: 15%;
-
-
-
-
+  top: 60%;
+  left: 15%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project1{display: inline-block;
+
+.project1 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black.jpeg);
+  position: relative;
+  background-image: url(black.png);
   color: wheat;
-
 }
+
 .back:hover {
-
-transform: rotate3d(0, 0, 1, 45deg);
-   box-shadow: 0 0 100px yellow; 
-   cursor: url('eye.png')
+  transform: rotate3d(0, 0, 1, 45deg);
+  box-shadow: 0 0 100px yellow;
+  cursor: url('eye.png')
 }
 
-
-.backs2{ position: absolute;
- 
+.backs2 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 30%;
-left: 40%;
-
+  top: 60%;
+  left: 40%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back2{
-    display: inline-block;
+.back2 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
-    box-shadow: 0 0 100px yellow; 
+  box-shadow: 0 0 100px yellow;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black2.jpeg);
+  position: relative;
+  background-image: url(black2.png);
   color: wheat;
 }
 
-.projects2{
+.projects2 {
   font-family: 'Berkshire Swash', cursive;
   text-align: 20px;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 30%;
-left: 40%;
-
-
-
-
+  top: 60%;
+  left: 40%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project2{display: inline-block;
+
+.project2 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black2.jpeg);
+  position: relative;
+  background-image: url(black2.png);
   color: wheat;
-
 }
+
 .back2:hover {
-transform: rotate3d(0, 0, 1, -45deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, -45deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-
-.backs3{ position: absolute;
- 
+.backs3 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 30%;
-left: 65%;
-
+  top: 60%;
+  left: 65%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back3{
-    display: inline-block;
+.back3 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
-      box-shadow: 0 0 100px yellow; 
+  object-fit: cover;
+  width: 300px;
+  box-shadow: 0 0 100px yellow;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black3.png);
+  position: relative;
+  background-image: url(black3.png);
   color: wheat;
 }
 
-.projects3{
+.projects3 {
   font-family: 'Berkshire Swash', cursive;
   text-align: left;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 30%;
-left: 65%;
-
-
-
-
+  top: 60%;
+  left: 65%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project3{display: inline-block;
+
+.project3 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black3.png);
+  position: relative;
+  background-image: url(black3.png);
   color: wheat;
-
 }
+
 .back3:hover {
-transform: rotate3d(0, 0, 1, 45deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, 45deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-.backs4{ position: absolute;
- 
+.backs4 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 100%;
-left: 15%;
-
+  top: 130%;
+  left: 15%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back4{
-    display: inline-block;
+.back4 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black4.jpeg);
-   box-shadow: 0 0 100px yellow; 
+  position: relative;
+  background-image: url(black2.png);
+  box-shadow: 0 0 100px yellow;
   color: wheat;
 }
 
-.projects4{
+.projects4 {
   font-family: 'Berkshire Swash', cursive;
   text-align: left;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 100%;
-left: 15%;
-
-
-
-
+  top: 130%;
+  left: 15%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project4{display: inline-block;
+
+.project4 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black4.jpeg);
+  position: relative;
+  background-image: url(black2.png);
   color: wheat;
-
 }
+
 .back4:hover {
-transform: rotate3d(0, 0, 1, 45deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, 45deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-.backs5{ position: absolute;
- 
+.backs5 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 100%;
-left: 40%;
-
+  top: 130%;
+  left: 40%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back5{
-    box-shadow: 0 0 100px yellow; 
-    display: inline-block;
+.back5 {
+  box-shadow: 0 0 100px yellow;
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black5.png);
+  position: relative;
+  background-image: url(black5.png);
   color: wheat;
 }
 
-.projects5{
+.projects5 {
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 100%;
-left: 40%;
-
-
-
-
+  top: 130%;
+  left: 40%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project5{display: inline-block;
+
+.project5 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black5.png);
+  position: relative;
+  background-image: url(black5.png);
   color: wheat;
-
 }
+
 .back5:hover {
-transform: rotate3d(0, 0, 1, -85deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, -85deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-.backs6{ position: absolute;
- 
+.backs6 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 100%;
-left: 65%;
-
+  top: 130%;
+  left: 65%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back6{
-    box-shadow: 0 0 100px yellow; 
-    display: inline-block;
+.back6 {
+  box-shadow: 0 0 100px yellow;
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black6.png);
+  position: relative;
+  background-image: url(black6.png);
   color: wheat;
 }
 
-.projects6{
+.projects6 {
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 100%;
-left: 65%;
-
-
-
-
+  top: 130%;
+  left: 65%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project6{display: inline-block;
+
+.project6 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black6.png);
+  position: relative;
+  background-image: url(black6.png);
   color: wheat;
-
 }
+
 .back6:hover {
-transform: rotate3d(0, 0, 1, -65deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, -65deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-.backs7{ position: absolute;
- 
+.backs7 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 170%;
-left: 15%;
-
+  top: 200%;
+  left: 15%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back7{
-    box-shadow: 0 0 100px yellow; 
-    display: inline-block;
+.back7 {
+  box-shadow: 0 0 100px yellow;
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black7.png);
+  position: relative;
+  background-image: url(black3.png);
   color: wheat;
 }
 
-.projects7{
+.projects7 {
   font-family: 'Berkshire Swash', cursive;
   text-align: left;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 170%;
-left: 15%;
-
-
-
-
+  top: 200%;
+  left: 15%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project7{display: inline-block;
+
+.project7 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black7.png);
+  position: relative;
+  background-image: url(black3.png);
   color: wheat;
-
 }
+
 .back7:hover {
-transform: rotate3d(0, 0, 1, 45deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, 45deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-
-
-.backs8{ position: absolute;
- 
+.backs8 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 170%;
-left: 65%;
-
+  top: 200%;
+  left: 65%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back8{
-    box-shadow: 0 0 100px yellow; 
-    display: inline-block;
+.back8 {
+  box-shadow: 0 0 100px yellow;
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black8.png);
+  position: relative;
+  background-image: url(black8.png);
   color: wheat;
 }
 
-.projects8{
+.projects8 {
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 170%;
-left: 65%;
-
-
-
-
+  top: 200%;
+  left: 65%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project8{display: inline-block;
+
+.project8 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black8.png);
+  position: relative;
+  background-image: url(black8.png);
   color: wheat;
-
 }
+
 .back8:hover {
-transform: rotate3d(0, 0, 1, -55deg);
+  transform: rotate3d(0, 0, 1, -55deg);
 }
 
-
-.backs9{ position: absolute;
- 
+.backs9 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 170%;
-left: 40%;
-
+  top: 200%;
+  left: 40%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back9{
-    box-shadow: 0 0 100px yellow; 
-    display: inline-block;
+.back9 {
+  box-shadow: 0 0 100px yellow;
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black2.jpeg);
+  position: relative;
+  background-image: url(black6.png);
   color: wheat;
 }
 
-.projects9{
+.projects9 {
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 170%;
-left: 40%;
-
-
-
-
+  top: 200%;
+  left: 40%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project9{display: inline-block;
+
+.project9 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black2.jpeg);
+  position: relative;
+  background-image: url(black6.png);
   color: wheat;
-
 }
+
 .back9:hover {
-transform: rotate3d(0, 0, 1, -55deg);
-   box-shadow: 0 0 100px yellow; 
+  transform: rotate3d(0, 0, 1, -55deg);
+  box-shadow: 0 0 100px yellow;
 }
 
-.backs10{ position: absolute;
- 
+.backs10 {
+  position: absolute;
   object-fit: cover;
- width: 300px;
+  width: 300px;
   height: 500px;
-
   z-index: 100;
-top: 240%;
-left: 40%;
-
+  top: 270%;
+  left: 40%;
   max-height: 300px;
-
   object-fit: cover;
-z-index: 2;
- flex-flow: row;
-
+  z-index: 2;
+  flex-flow: row;
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
-
-
 }
 
-.back10{
-    box-shadow: 0 0 100px yellow; 
-    display: inline-block;
+.back10 {
+  box-shadow: 0 0 100px yellow;
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black2.jpeg);
+  position: relative;
+  background-image: url(black2.png);
   color: wheat;
 }
 
-.projects10{
+.projects10 {
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
-color: wheat;
+  color: wheat;
   position: absolute;
- 
   object-fit: contain;
   background-repeat: no-repeat;
- width: 300px;
+  width: 300px;
   height: 400px;
-
   z-index: 1;
-top: 240%;
-left: 40%;
-
-
-
-
+  top: 270%;
+  left: 40%;
   object-fit: cover;
-
-
   display: block;
-  
   flex: 0 1 auto;
   flex-direction: row;
   gap: 1vw;
   transition: width 2s, height 4s;
-
 }
-.project10{display: inline-block;
+
+.project10 {
+  display: inline-block;
   flex: 0 0 auto;
-    object-fit: cover;
-    width: 300px;
+  object-fit: cover;
+  width: 300px;
   height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:-6px -8px;
+  background-position: -6px -8px;
   margin: 0 2px 0 0;
-  position:relative;
-background-image: url(black2.jpeg);
+  position: relative;
+  background-image: url(black2.png);
   color: wheat;
+}
+
+.back10:hover {
+  box-shadow: 0 0 100px yellow;
+  transform: rotate3d(0, 0, 1, -55deg);
+  cursor: url('eye.png'), pointer;
+}
+
+h4 {
+  font-family: 'Berkshire Swash', cursive;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  z-index: 3;
+  left: 0;
+  top: 300px;
+ color: #BC9D6C ;
 
 }
-.back10:hover {
-   box-shadow: 0 0 100px yellow; 
-transform: rotate3d(0, 0, 1, -55deg);
-cursor: url('eye.png'), pointer; 
+
+h4 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  
 }
+h6{
+    display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+   font-family: 'Berkshire Swash', cursive;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  z-index: 3;
+  left: 0;
+  top: 330%;
+ color: wheat ;
+}
+
+h7{
+   display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+   font-family: 'Berkshire Swash', cursive;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  z-index: 3;
+  left: 0;
+  top: 337%;
+ color: #BC9D6C ;
+}
+

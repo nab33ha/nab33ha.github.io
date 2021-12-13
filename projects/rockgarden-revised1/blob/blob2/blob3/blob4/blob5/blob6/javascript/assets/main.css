@@ -1,0 +1,15 @@
+canvas{
+margin-left: 10VW;
+background-image: url(assets/blobs.png);
+background-repeat: no-repeat;
+border-color: black;
+
+}
+h1{
+    font-family: monospace;
+    text-align: center;
+}
+
+P{ font-family: monospace;
+    text-align: center;
+}
