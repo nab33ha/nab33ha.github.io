@@ -1,0 +1,30 @@
+html{
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+body{
+	background-image: url("back2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+footer{background-color:#44342B;
+	position: fixed;
+	bottom: 0px;
+	
+margin: 0;
+height: 32px;
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ color: bisque;
+  }
+.button{margin-left: 50%;
+	margin-top: 700px;
+	width: 144px;
+	height: 60px;
+}
+.button:hover{
+	box-shadow: 0 0 100px yellow;
+}
