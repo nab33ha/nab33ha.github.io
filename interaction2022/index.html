@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<audio autoplay>
-  <source src="horror.mp3" type="audio/mpeg" />
-</audio>
-
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="assets/main.css">
@@ -12,14 +8,29 @@
 </head>
 <body>
 
-	<div class="button"
-> <a href="link2.html">
-         <img alt="button" src="assets/next.png"
+	<div class="button" 
+> <a href="link2.html" >
+         <img alt="button" src="assets/next.png "
          width="150" height="70">
       </a>
   </div>
 
+ 
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+     
+
+        }
+      
+    </script>
+   
 </body>
+    <input type="button" value="Click to Play Background Sound" onclick="play()">
+    <audio id="audio" src="horror.mp3"></audio>
+ 
+
 <footer>
 
 <p>© Feature Illustration, by Tanushree Roychoudhury. </p>
