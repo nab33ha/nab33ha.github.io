@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+min-height: 100%;
+
+}
+body{
+	min-height: 100vh;
+	overflow: hidden;
+
+}
+
+.text{ 
+	color: white;
+	font-family: 'Cormorant Garamond', serif;
+	mix-blend-mode: exclusion;
+animation: text 5s ease-in-out infinite;
+animation-delay: 3s;
+
+}
+/*@keyframes text{
+	from{
+
+	}
+	to{
+
+	}
+}*/
+
+p:nth-child(1){
+top: 90%;
+left:  10%;
+position: absolute;
+height: 30px;
+z-index: 2;
+}
+
+p:nth-child(2){
+top: 60%;
+left:  03%;
+position: absolute;
+height: 30px;
+z-index: 1;
+
+}
+p:nth-child(3){
+top: 10%;
+right:10%;
+position: absolute;
+height: 30px;
+}
+
+p:nth-child(4){
+top: 97%;
+right:0%;
+position: absolute;
+height: 30px;
+z-index: 10;
+}
+p:nth-child(5){
+top: 95%;
+right:0%;
+position: absolute;
+height: 30px;
+z-index: 9;
+}
+p:nth-child(6){
+top: 93%;
+right:0%;
+position: absolute;
+height: 30px;
+z-index:3 ;
+}
+
+p:nth-child(7){
+top: 45%;
+right:0%;
+position: absolute;
+height: 30px;
+font-size: xx-large ;
+z-index: 0;
+}
+p:nth-child(9){
+top: 65%;
+right:15%;
+position: absolute;
+height: 30px;
+font-size:3rem;
+z-index: 1;
+animation: colorchange 5s ease-in-out ;
+color: white;
+mix-blend-mode: exclusion;
+ }
+ p:nth-child(10){
+top: 70%;
+right:15%;
+position: absolute;
+height: 30px;
+font-size:2rem;
+z-index: 1;
+font-style: italic;
+font-weight: 200;
+animation: colorchange 5s ease-in-out ;
+color: white;
+mix-blend-mode: exclusion;
+
+ }
+ p:nth-child(10):hover{
+ 	color: darkred;
+ }
+
+
+.shadow{
+mix-blend-mode: difference;
+	height: 100%;
+	width: 35%;
+	background-color: lightgray;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 0;
+box-shadow: 0 3px 20px 10px white;
+	 
+	  animation: slide 5s ease-in-out  ;
+
+}
+
+@keyframes slide
+{
+0%{left: 110%;
+
+
+
+}
+100%{
+	left: 0;
+	
+
+}}
+
+.shadow2{
+mix-blend-mode: difference;
+width: 100%;
+height: 5vh;
+	background-color: lightgray;
+	position: relative;
+	z-index: 11;
+	top:  80vh;
+	left: 0;
+	  
+		box-shadow: 0 3px 30px 10px white;
+	  animation: slide2 6s ease-in-out ;
+
+	
+}
+
+@keyframes slide2
+{
+0%{top: 0px;
+
+	
+}
+100%{
+top: 80vh;
+
+
+}}
+
+.shadow3{
+mix-blend-mode: difference;
+width: 90%;
+height: 1vh;
+	background-color: lightgray;
+	position: relative;
+	z-index: 11;
+	top:  90vh;
+	left: 0;
+box-shadow: 0 3px 30px 10px white;
+	  animation: slide3 6s ease-in-out ;
+
+	
+}
+
+@keyframes slide3
+{
+0%{top: 0px;
+	width: 110%;
+	 
+}
+100%{
+top: 90vh;
+width: 90%;
+
+
+
+}}
+
+.shadow4{
+mix-blend-mode: difference;
+	height: 100%;
+	width: 1vh;
+	background-color: lightgray;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 45%;
+box-shadow: 0 3px 30px 10px white;
+	 
+	  animation: slide4 5s ease-in-out  ;
+
+}
+
+@keyframes slide4
+{
+0%{left: 110%;
+
+
+
+}
+100%{
+	left: 45%;
+	
+
+}}
+
+	
+.shadow5{
+mix-blend-mode: difference;
+	height: 100%;
+	width: 1vh;
+	background-color: lightgray;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 55%;
+box-shadow: 0 3px 30px 10px white;
+	 
+	  animation: slide5 5s ease-in-out  ;
+
+}
+
+@keyframes slide5
+{
+0%{left: 110%;
+
+
+
+}
+100%{
+	left: 55%;
+	
+
+}}
+.shadow6{
+mix-blend-mode: difference;
+width: 100%;
+height: 1vh;
+	background-color: lightgray;
+	position: relative;
+	z-index: 11;
+	top:  47vh;
+	left: 0;
+box-shadow: 0 3px 30px 10px white;
+	  animation: slide6 6s ease-in-out ;
+
+	
+}
+
+@keyframes slide6
+{
+0%{top: 0px;
+	
+	 
+}
+100%{
+top: 47vh;
+
+
+}}
+
+.cursor {
+background-color: white;
+color: transparent;
+opacity: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: red;
+  opacity: .3;
+ position: relative;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+
+}
+.hover {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+
+
+

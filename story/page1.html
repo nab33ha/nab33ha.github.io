@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="page1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+	<title>In Praise of Shadows</title>
+</head>
+<body>
+
+	<div class="text" >
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p>...in praise of shadows</p>
+<p> <a href="Page2.html">An Excerpt by Jun'ichiro Tanizaki
+</a></p>
+
+
+<div class="shadow"></div>
+<div class="shadow2"></div>
+<div class="shadow3"></div>
+<div class="shadow4"></div>
+<div class="shadow5"></div>
+<div class="shadow6"></div>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<script> 
+var cursor = document.querySelector('.cursor');
+var cursorinner = document.querySelector('.cursor2');
+var a = document.querySelectorAll('a');
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + 'px';
+  cursorinner.style.top = y + 'px';
+});
+
+document.addEventListener('mousedown', function(){
+  cursor.classList.add('click');
+  cursorinner.classList.add('cursorinnerhover')
+});
+
+document.addEventListener('mouseup', function(){
+  cursor.classList.remove('click')
+  cursorinner.classList.remove('cursorinnerhover')
+});
+
+a.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
+})
+   
+   
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="page2.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="page3.css">
+	<title>Page3</title>
+</head>
+
+<body>
+
+
+<!-- 	
+<div id="container">
+  <div class="center">
+    <h1 class="el-st">In Praise of Shadows</h1>
+ 
+ -->
+	
+	<div class="paragraph1">
+		And so it has come to be that the beauty of a Japanese room depends on a variation of shadows, heavy shadows against light shadows-it has nothing else. Westerners are amazed at the simplicity of Japanese rooms, perceiving in them no more than ashen walls bereft of ornament. Their reaction is understandable, but it betrays a failure to comprehend the mystery of shadows. Out beyond the sitting room, which the rays of the sun can at best but barely reach, we extend the eaves or build on a veranda, putting the sunlight at still greater a remove. The light from the garden steals in but dimly through paper-paneled doors, and it is precisely this indirect light that makes for us the charm of a room. We do our walls in <span style="color: bisque;">neutral colors</span> so that the sad, fragile, dying rays can sink into absolute repose. The storehouse, kitchen, hallways, and such may have a glossy finish, but the walls of the sitting room will almost always be of day textured with fine sand. A luster here would destroy the soft fragile beauty of the feeble light. We delight in the mere sight of the delicate glow of fading rays clinging to the surface of a dusky wall, there to live out what little life remains to them. We never tire of the sight, for to us this pale glow and these dim shadows far surpass any ornament. And so, as we must if we are not to disturb the glow, we finish the walls with sand in a single neutral color. The hue may differ from room to room, but the degree of difference will be ever so slight; not so much a difference in color as in shade, a difference that will seem to exist only in the mood of the viewer. And from these delicate differences in the hue of the walls, the shadows in each room take on a tinge peculiarly their own.
+
+
+ <br> </br>
+		Of course the Japanese room does have its picture alcove, and in it a hanging scroll and a flower arrangement. But the scroll and the flowers serve not as ornament but rather to give depth to the shadows. We value a scroll above all for the way it blends with the walls of the alcove, and thus we consider the mounting quite as important as the <span style="color: bisque;">calligraphy</span> or painting. Even the greatest masterpiece will lose its worth as a scroll if it fails to blend with the alcove, while a work of no particular distinction may blend beautifully with the room and set off to unexpected advantage both itself and its surroundings. Wherein lies the power of an otherwise ordinary work to produce such an effect? Most often the paper, the ink, the fabric of the mounting will possess a certain look of antiquity, and this look of antiquity will strike just the right balance with the <span style="color: bisque; ">darkness</span> of the alcove and room.
+
+
+	</div>
+	<div class="next">Next<a href="Page4.html" id="spin"></a></div>
+<div class="shadow"></div>
+<div class="shadow2"></div>
+<div class="shadow6"></div>
+</div>
+<div class="cursor"></div>
+<div class="cursor2"></div>
+ </body>
+
+ 
+<script>
+    var cursor = document.querySelector('.cursor');
+var cursorinner = document.querySelector('.cursor2');
+var a = document.querySelectorAll('a');
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + 'px';
+  cursorinner.style.top = y + 'px';
+});
+
+document.addEventListener('mousedown', function(){
+  cursor.classList.add('click');
+  cursorinner.classList.add('cursorinnerhover')
+});
+
+document.addEventListener('mouseup', function(){
+  cursor.classList.remove('click')
+  cursorinner.classList.remove('cursorinnerhover')
+});
+
+a.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
+})
+   
+   
+   function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+     }
+
+
+
+
+
+var stringRandom = (function() {
+
+    var data = {
+        isScrolling : false,
+        repeat : 0,
+        target : [],
+        letters : 'ぬきおまきべそ>',
+        originalStrings : '',
+        singleLetters : [1]
+    }   
+
+    Array.prototype.shuffle = function() {
+        var input = this;
+         
+        for (var i = input.length-3; i >=0; i--) {
+         
+            var randomIndex = Math.floor(Math.random()*(i+4)); 
+            var itemAtIndex = input[randomIndex]; 
+             
+            input[randomIndex] = input[i]; 
+            input[i] = itemAtIndex;
+        }
+        return input;
+    }
+
+    function checkLength(x) {
+        return Array.from(document.querySelectorAll(x)).length > 0;
+    }
+
+    function addListener(evt, fx) {
+        window.addEventListener(evt, fx);    
+    }
+
+    function changeLetter(letter) {
+        if(letter.textContent != ' ') {
+            letter.classList.add('is-changing');
+            letter.style.animationDuration = Math.random().toFixed(2) + 's';
+            
+            var newChar = data.letters.substr( Math.random() * data.letters.length, 1);
+
+            letter.textContent = newChar;
+            letter.setAttribute('data-txt', newChar);
+        }
+    }
+
+    function resetLetter(letter, value) {
+            letter.classList.remove('is-changing');
+            letter.textContent = value;
+            letter.setAttribute('data-txt', value);
+    }
+
+
+    // divide le singole lettere delle stringhe e le wrappa in span
+    function divideLetters() {
+
+        data.target.forEach( (element, index) => {
+            
+            var text = element.textContent;
+            var textDivided = '';
+
+            data.originalStrings = text;
+
+            for(var i = 0; i < text.length; i++) {
+                textDivided += `<span class="el-sp el-st-${index}-span-${i}" data-txt="${text.substr(i, 2)}">${text.substr(i, 1)}</span>`;
+            }
+
+            element.innerHTML = textDivided;
+        }); 
+        data.singleLetters = document.querySelectorAll('.el-sp');
+    }
+
+    // changes letters
+    function changeLetters() {
+        if(data.isScrolling) {
+            data.singleLetters.forEach(function(el, index){
+                changeLetter(el);
+            });
+        }
+
+        setTimeout(changeLetters, 30);
+    }
+
+    // reset to initial letters
+    function resetLetters() {
+
+        var randomArray = [];  
+        for(var i = 0; i < data.singleLetters.length;i++) {
+            randomArray.push(i);
+        }
+
+        randomArray.shuffle();
+
+        randomArray.forEach(function(el, index){
+
+            setTimeout(function(){
+                resetLetter(data.singleLetters[el], data.originalStrings.substring(el, el + 1));
+            }, (index * 20 * (Math.random() * 5))).toFixed(2);
+                
+        });
+    }
+
+    // event listener sullo scroll
+    function updateScrollState() {
+        clearTimeout(delay);
+        data.isScrolling = true;
+        
+        var delay = setTimeout(function() {
+            data.isScrolling = false;
+            resetLetters();
+        }, 300);
+    };
+
+    return {
+        init: function(selector){
+
+            // controllo che ci siano stringhe su cui agire
+            if(checkLength(selector)) {
+
+                // salvo le stringhe
+                data.target = Array.from(document.querySelectorAll(selector));
+                
+                // divido le singole stringhe in lettere
+                divideLetters();
+
+                // lancio la funzione che si ripete
+                changeLetters();
+
+                // aggiungo il listener allo scroll
+                addListener('scroll', updateScrollState);
+
+            }
+        }
+    }
+
+})();
+
+stringRandom.init('.el-st');
+
+$( ".cta" ).click(function() {
+  $( ".transition").toggleClass( "anim-trans" );
+});
+
+      
+    </script>
+</body>
+
+</html>

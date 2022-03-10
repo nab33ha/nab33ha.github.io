@@ -1,0 +1,308 @@
+*{height: 80vh;
+	
+}
+body{
+	color: white;
+	background-color: black;
+	justify-content: center;
+	text-align: center;
+
+
+}
+
+h1{
+	color: white;
+	font-size: 4em;
+	height: 10%;
+	width: 100%;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.paragraph1{
+	position: absolute;
+	padding-top: 50px;
+	padding-left: 25%;
+	padding-right: 25%;
+
+
+}
+span{
+z-index: 14;
+	width: 100px;
+	height: 100px;
+	
+	text-shadow: 0 0 10px white;
+}
+
+
+
+span:nth-child(1):hover{
+
+	position: absolute;
+	animation: thrust 3s ease-in-out;
+}
+@keyframes thrust{
+
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); 
+  	padding-bottom: 100px;
+  	color: darkred;
+  	text-shadow: 0 0 10px red;
+  font-size: 2rem;}
+  100% { transform: translateY(0); }
+}
+
+
+span:nth-child(3):hover{
+	text-shadow: 10 0 10px red;
+
+	animation: shadow 2s ease-in-out;
+}
+@keyframes shadow{
+
+  0%   {  }
+  50%  {font-size: 1.5em; 
+  	color: black;
+  	box-shadow: 10 10 10px white;
+
+
+  }
+  100% {  }
+}
+
+
+
+.shadow{
+mix-blend-mode: difference;
+	height: 100%;
+	width: 35%;
+	background-color: lightgray;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 0;
+box-shadow: 0 3px 20px 10px white;
+	 
+	  animation: slide 5s ease-in-out  ;
+
+}
+
+@keyframes slide
+{
+0%{left: 110%;
+
+
+
+}
+100%{
+	left: 0;
+	
+
+}}
+
+.shadow2{
+mix-blend-mode: difference;
+width: 100%;
+height: 5vh;
+	background-color: lightgray;
+	position: relative;
+	z-index: 11;
+	top:  80vh;
+	left: 0;
+	  
+		box-shadow: 0 3px 30px 10px white;
+	  animation: slide2 6s ease-in-out ;
+
+	
+}
+
+@keyframes slide2
+{
+0%{top: 0px;
+
+	
+}
+100%{
+top: 80vh;
+
+
+}}
+
+.shadow3{
+mix-blend-mode: difference;
+width: 90%;
+height: 1vh;
+	background-color: lightgray;
+	position: relative;
+	z-index: 11;
+	top:  90vh;
+	left: 0;
+box-shadow: 0 3px 30px 10px white;
+	  animation: slide3 6s ease-in-out ;
+
+	
+}
+
+@keyframes slide3
+{
+0%{top: 0px;
+	width: 110%;
+	 
+}
+100%{
+top: 90vh;
+width: 90%;
+
+
+
+}}
+
+.shadow4{
+mix-blend-mode: difference;
+	height: 100%;
+	width: 1vh;
+	background-color: lightgray;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 45%;
+box-shadow: 0 3px 30px 10px white;
+	 
+	  animation: slide4 5s ease-in-out  ;
+
+}
+
+@keyframes slide4
+{
+0%{left: 110%;
+
+
+
+}
+100%{
+	left: 45%;
+	
+
+}}
+
+	
+.shadow5{
+mix-blend-mode: difference;
+	height: 100%;
+	width: 1vh;
+	background-color: lightgray;
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	left: 55%;
+box-shadow: 0 3px 30px 10px white;
+	 
+	  animation: slide5 5s ease-in-out  ;
+
+}
+
+@keyframes slide5
+{
+0%{left: 110%;
+
+
+
+}
+100%{
+	left: 55%;
+	
+
+}}
+.shadow6{
+mix-blend-mode: difference;
+width: 100%;
+height: 1vh;
+	background-color: lightgray;
+	position: relative;
+	z-index: 11;
+	top:  47vh;
+	left: 0;
+box-shadow: 0 3px 30px 10px white;
+	  animation: slide6 6s ease-in-out ;
+
+	
+}
+
+@keyframes slide6
+{
+0%{top: 0px;
+	
+	 
+}
+100%{
+top: 47vh;
+
+
+}}
+
+
+.next{
+	position: absolute;
+	top: 85%;
+	right: 10%;
+	height: 10px;
+}
+#spin {
+
+  color:red;
+}
+#spin:after {
+  content:"";
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { content:"ページ"; }
+  25% { content:"Page"; }
+  50% { content:"ページ"; }
+  100% { content:"Page"; }
+ 
+}
+
+.cursor {
+background-color: white;
+color: transparent;
+opacity: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: red;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+
+}
+.hover {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+
+
+
+
