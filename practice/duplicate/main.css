@@ -1,0 +1,266 @@
+body{
+	/*background: #2E0614 ;*/
+	font-size: xx-large;
+	background: #232021 ;
+color: white;
+padding: 10px;
+
+
+}
+.sidebar {
+		cursor: url("music.png"), url("music.png"), default;
+height: 100%;
+width: 120px;
+position: fixed;
+top: 0;
+left: 0;
+padding-top: 40px;
+/*background-color: black*/;
+}
+
+.sidebar a {
+		cursor: url("music.png"), url("music.png"), default;
+	color: white;
+	padding-left: 3px;
+padding-top: 50px;
+font-size: 18px;
+display: block;
+font-family: 'Inconsolata', monospace;
+}
+
+.sidebar div {
+	cursor: url("music.png"), url("music.png"), default;
+	padding-left: 3px;
+padding-top: 200px;
+font-size: 18px;
+display: block;
+font-family: 'Inconsolata', monospace;
+}
+#pop1 {
+	color: bisque;
+	font-size: 30px;
+}
+
+.sidebar2 {
+cursor: url("spotify.png"), url("spotify.png"), default;
+height: 100%;
+width: 120px;
+position: fixed;
+top: 0;
+right: 0;
+padding-top: 40px;
+
+}
+
+.sidebar2 div {
+	cursor: url("spotify.png"), url("spotify.png"), default;
+	font-family: 'Inconsolata', monospace;
+font-size: 24px;
+display: block;
+}
+.sidebar2 a{
+cursor: url("spotify.png"), url("spotify.png"), default;
+	color: white;
+	padding-right: 3px;
+padding-top: 50px;
+font-size: 18px;
+display: block;
+font-family: 'Inconsolata', monospace;
+
+}
+
+.cartoon_show_select{
+	position: relative;
+	padding-left: 500PX;
+}
+
+img{
+	margin: 0;
+	position: relative;
+	height: 310px;
+	width: 350px;
+left: 5%;
+
+
+	padding: 20px;
+}
+h1{font-family: 'Inconsolata', monospace;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+#music-option-container{ 
+	cursor: url("air.png"), url("air.png"), default;
+	display: flex;
+	padding: 10px;
+	padding-left: 100px;
+	padding-right: 90px;
+
+}
+
+
+h2{ font-family: 'Inconsolata', monospace;
+	text-align: center;
+	font-size: 1rem;
+
+}
+
+
+h3{ font-family: 'Inconsolata', monospace;
+	text-align: center;
+	font-size: 1rem;
+
+}
+.options{ font-size: medium;
+/*text-decoration: underline;*/
+padding: 20px;
+margin: 20px;
+/*border-style: solid;*/
+	/*border-width: 5px;*/
+	/*border-color: lightgrey;*/
+	height: 150px;
+	width: 200vh;
+	text-align: center;
+
+	
+
+}
+
+@font-face {
+  font-family: 'Due';
+  src:  url('due.woff2') format('woff2'),
+        url('due.woff') format('woff');
+}
+.options:nth-child(1){
+background-image: url("01.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+color: transparent;
+}
+
+.options:nth-child(2){ 
+	/*padding-top: 20px;*/
+background-image: url("02.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+color: transparent;
+
+}
+.options:nth-child(3){
+	
+background-image: url("03.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+color: transparent;
+
+}
+.options:nth-child(4){
+	
+background-image: url("04.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+color: transparent;
+
+}
+.options:nth-child(5){
+	
+background-image: url("05.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+color: transparent;
+
+}
+.options:nth-child(6){
+	
+background-image: url("06.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+color: transparent;
+
+}
+
+
+.options:hover {
+filter: sepia(100%);
+
+
+}
+
+
+.options:nth-child(7){
+background-image: url("07.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ color: transparent;
+
+}
+.options:nth-child(8){
+background-image: url("08.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ color: transparent;
+
+}
+
+/*.options:nth-child(1):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+}
+.options:nth-child(3){
+
+
+}
+.options:nth-child(3):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+}
+.options:nth-child(4){
+
+
+}
+.options:nth-child(4):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+/*}
+.options:nth-child(5){
+background-image: url("sun.png");
+ background-size: cover;
+ box-shadow: 10px 10px white;
+ height: 250px;
+
+}
+.options:nth-child(5):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+}
+.options:nth-child(6){
+
+
+}
+.options:nth-child(6):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+}
+.options:nth-child(7){
+
+
+}
+.options:nth-child(7):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+}
+.options:nth-child(8){
+
+
+}
+.options:nth-child(8):hover {
+	background-color: blanchedalmond;
+	color:#2E0614 ;
+	
+}

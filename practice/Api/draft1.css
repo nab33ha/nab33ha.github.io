@@ -1,0 +1,20 @@
+body{
+	background: #2E0614 ;
+	font-size: xx-large;
+color: white;
+font-family: 'Inconsolata', monospace;
+}
+.cartoon_show_select{
+	position: relative;
+	padding-left: 500PX;
+}
+
+img{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	padding: 50px;
+}
+h1{
+	text-align: center;
+}
