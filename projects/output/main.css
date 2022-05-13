@@ -1,0 +1,30 @@
+body{
+  background-color: black;
+  color: green;
+}
+#kinput {
+    color: green;
+  background-color: black;
+  font-size: 150%;
+  box-sizing: border-box;
+  width: 95%;
+}
+
+#area {
+  color: green;
+  background-color: black;
+  width: 95%;
+  box-sizing: border-box;
+  height: 250px;
+  border: 1px solid black;
+  display: block;
+}
+
+form label { position: relative;
+  display: flex;
+  flex-direction: row;
+    color: green;
+  background-color: black;
+  display: inline;
+  white-space: nowrap;
+}

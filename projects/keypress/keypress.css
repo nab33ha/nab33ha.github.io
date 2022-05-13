@@ -1,0 +1,54 @@
+html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+BODY{ margin: 0;
+    
+    height: 100%;
+    width: 100%;
+
+background-image: url(hack.jpg);
+    font-family: 'VT323', monospace;
+     /* background-color: black;*/
+  color: green;
+}
+
+h1{  padding: 100px;
+    width: 90%;
+    position: absolute;
+    top: 55%;
+    background-color: black;
+font-size: small;
+text-align: left;
+
+
+}
+h3{    background-color: black;
+ border: 2px;
+    border-style: solid;
+    border-color: green;
+    font-size: 3rem;
+    text-align: center;
+}
+h2{    text-align: center;background-color: black;
+  border: 2px;
+    border-style: solid;
+    border-color: green;
+    padding-left: 100px;
+}
+img{    border: 2px;
+    border-style: solid;
+    border-color: green;
+    left: 40%;
+    position: absolute;
+}
+.button{margin-left: 50%;
+    margin-top: 700px;
+    width: 144px;
+    height: 60px;
+}
+.button:hover{
+    box-shadow: 0 0 100px yellow;
+}

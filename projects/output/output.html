@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<title>Hxckerman</title>
+</head>
+<body>
+<form id="form" onsubmit="return false">
+
+    Prevent default for:
+    <label>
+      <input type="checkbox" name="keydownStop" value="1"> keydown</label>&nbsp;&nbsp;&nbsp;
+    <label>
+      <input type="checkbox" name="keyupStop" value="1"> keyup</label>
+
+    <p>
+      Ignore:
+      <label>
+        <input type="checkbox" name="keydownIgnore" value="1"> keydown</label>&nbsp;&nbsp;&nbsp;
+      <label>
+        <input type="checkbox" name="keyupIgnore" value="1"> keyup</label>
+    </p>
+
+    <p>Look like a HackerMan</p>
+    <img src="https://i.kym-cdn.com/entries/icons/original/000/021/807/ig9OoyenpxqdCQyABmOQBZDI0duHk2QZZmWg2Hxd4ro.jpg" style="width: 500px;">
+
+    <input type="text" placeholder="Press keys here" id="kinput">
+
+    <textarea id="area" readonly></textarea>
+    <input type="button" style="background-color: black; color: green;" value="Clear" onclick="area.value = ''" />
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
